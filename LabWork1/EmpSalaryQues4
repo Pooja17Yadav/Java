@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class EmpSalaryAssig4
+{
+   public static void main (String args[])
+   { 
+   Scanner A=new Scanner(System.in);
+   System.out.println("Enter the average of  employees salary :");
+   int average=A.nextInt();
+   
+   System.out.println("Enter First Employee salary :");
+   int emp1=A.nextInt();
+   
+   System.out.println("Enter Second Employee salary :");
+   int emp2=A.nextInt();
+       
+       int emp3;
+       
+       emp3=(average*3)-(emp1+emp2);
+       
+       System.out.println("Salary of Third Employee  is :"+emp3);
+   }
+}
