@@ -1,7 +1,0 @@
-Question: 5
-Output: Compile time error
-Logic: scope of variable y is declare inside of curly bracket ,that's why cannot find symbol variable y.
-
-
-Question: 6
-Output : 32
