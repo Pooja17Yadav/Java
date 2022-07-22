@@ -1,0 +1,34 @@
+Question no :1 
+(A) 
+create database student;
+
+create table employee(
+ 'emp_id int' unsigned  auto_increment primary key,
+ 'emp_name' varchar(50),
+ 'emp_dept' varchar(45),
+ 'emp_sal' bigint(10)
+);
+
+(B)
+
+use student;
+
+insert into employee values(1,'Pooja','IT',60000);
+insert into employee values(2,'Kiran','Marketing',850000);
+insert into employee values(3,'Afsha','Sales',90000);
+insert into employee values(4,'Neha','Finance',450000);
+
+
+(c)
+select emp_name,emp_sal from student.employee;
+
+
+UPDATE 'student'.'employee' SET 'emp_dept = 'IT'WHERE 'emp_id' = '1';
+UPDATE 'student'.'employee' SET 'emp_dept = 'Finance'WHERE 'emp_id' = '4';
+
+
+(D)
+UPDATE student.employee SET emp_dept = 'Finance' WHERE 'emp_dept'= 'Acounts';
+
+(E)
+delete from student.employee where emp_id ='1';
