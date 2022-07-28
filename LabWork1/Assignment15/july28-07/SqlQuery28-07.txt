@@ -1,0 +1,30 @@
+Question 1) 
+Assume there is a Employee table having multiple data and one the column name is department.
+Write a query to fetch the number of employees working in the department ‘HR’.
+
+select * from pooja.employee;
+
+insert into pooja.employee(emp_id,emp_name,department_name,salary)VALUES(101,"Pooja","HR",70000);
+insert into pooja.employee(emp_id,emp_name,department_name,salary)VALUES(102,"KIran","Developer",760000);
+insert into pooja.employee(emp_id,emp_name,department_name,salary)VALUES(103,"Afsha","Marketing",45000);
+insert into pooja.employee(emp_id,emp_name,department_name,salary)VALUES(104,"Neha","HR",65000);
+insert into pooja.employee(emp_id,emp_name,department_name,salary)VALUES(105,"Iqra","IT",78000);
+insert into pooja.employee(emp_id,emp_name,department_name,salary)VALUES(106,"Anjali","sales",80000);
+insert into pooja.employee(emp_id,emp_name,department_name,salary)VALUES(107,"Sabreen","Finance",50000);
+insert into pooja.employee(emp_id,emp_name,department_name,salary)VALUES(108,"Humaira","HR",850000);
+
+select department_name, count("HR")from pooja.employee group by department_name;
+
+
+Question 2) 
+Assume there is a Employee table having multiple data and one the column name is fname.
+Write a query to find the firstnames of employees that begin with ‘S’.
+
+select * from student.lab;
+
+insert into student.lab(emp_id,emp_Fname,emp_Lname,dept)VALUE(11,"Kiran","Yadav","Marketing");
+insert into student.lab(emp_id,emp_Fname,emp_Lname,dept)VALUE(12,"Sabreen","Chudhari","HR");
+
+select * from student.lab where emp_Fname like 's%';
+
+
