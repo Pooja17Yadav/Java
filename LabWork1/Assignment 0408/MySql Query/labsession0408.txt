@@ -1,0 +1,27 @@
+CREATE TABLE `lab`.`employeedetails` (
+  `EmpId` INT NOT NULL,
+  `FullName` VARCHAR(45) NOT NULL,
+  `ManagerId` VARCHAR(45) NOT NULL,
+  `DateOfJoining` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`EmpId`),
+  UNIQUE INDEX `EmpID_UNIQUE` (`EmpId` ASC) VISIBLE);
+
+
+CREATE TABLE `lab`.`employeesalary` (
+  `EmpId` INT NOT NULL,
+  `Project` VARCHAR(45) NOT NULL,
+  `Salary` FLOAT NOT NULL,
+  `Variable` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`EmpId`),
+  UNIQUE INDEX `EmpId_UNIQUE` (`EmpId` ASC) VISIBLE);
+
+1) Write an SQL query to fetch employee names having a salary greater than or equal to 5000 and less than or equal to 10000.
+Ans) 
+	use lab;
+	SELECT employeedetails.FullName, employeesalary.Salary FROM employeedetails,employeesalary Where Salary >= 5000 AND Salary <= 10000
+	AND employeedetails.EmpId=employeesalary.EmpId;
+
+2) Write an SQL query to fetch the employees whose name begins with any two characters, followed by a text “hn” and ending with any sequence of characters
+Ans)	
+	use lab;
+	SELECT * FROM employeedetails WHERE FullName LIKE '__hn%'
