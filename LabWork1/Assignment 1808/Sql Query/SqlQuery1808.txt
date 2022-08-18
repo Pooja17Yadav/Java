@@ -1,0 +1,12 @@
+Q.2) Write a query to find the Nth highest salary from the Employee table (eid,ename,dept,salary)
+
+Ans)---
+select * from employee order by salary desc limit 2;
+
+
+Q.3) Write a query to fetch details of all employees excluding the employees with 
+names, “Rocky” and “Vikram” from the Employee(eid,ename,dept,salary) table.
+
+Ans)---
+
+select * from employee where not ename='Vikram' && not ename='Rocky';
