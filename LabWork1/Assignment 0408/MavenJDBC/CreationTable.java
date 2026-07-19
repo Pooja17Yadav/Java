@@ -22,7 +22,7 @@ public class CreationTable {
 			con = DriverManager.getConnection(url,"root","@pooja#9136");
 			System.out.println("Connection Established Successfully..");
 			stmt=con.createStatement();
-			System.out.println("Platform created successfully ..");
+			System.out.println("Platform created successfully .....");
 			stmt.execute(create);
 			System.out.println("Table created");
 		}
