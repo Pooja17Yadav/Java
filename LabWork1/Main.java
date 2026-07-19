@@ -8,9 +8,9 @@ public class Main extends ATM
 		Main bank1=new Main();
 		Main bank=new Main();
 		Main bank2=new Main();
-		bank1.Bank("BOB","Khairani Road,Sakinaka");
-		bank.Bank("BOB",1234567892,"Khairane Road,Sakinaka");
-		bank2.Bank("SBI","Khairane Road,Sakinaka,Andheri");
+		bank1.Bank("BOB", "Khairani Road, Sakinaka");
+		bank.Bank("BOB",1234567892, "Khairani Road, Sakinaka");
+		bank2.Bank("SBI", "Khairani Road, Sakinaka, Andheri");
 	}
 
 }
